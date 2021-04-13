@@ -1,0 +1,6 @@
+.root {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: var(--sp6) var(--pg-margin-horizontal);
+}

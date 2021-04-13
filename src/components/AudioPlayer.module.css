@@ -1,0 +1,150 @@
+.layout {
+  display: grid;
+  justify-content: stretch;
+  justify-items: stretch;
+  align-items: center;
+  gap: var(--sp4) var(--sp8);
+  padding: var(--sp4) var(--sp5);
+  border-block-start: 1px solid var(--chrome-border-color);
+}
+
+.start {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--sp4);
+}
+
+.start img {
+  display: block;
+  object-fit: cover;
+  border-radius: var(--image-album-border-radius);
+}
+
+.start > div {
+  display: grid;
+}
+
+.startTextEmphasis {
+  color: var(--text-color-e);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.startTextEmphasis a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.startText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.startText a {
+  text-decoration: none;
+  font-size: var(--fs0);
+  color: var(--text-color);
+}
+
+.startTextEmphasis a:hover,
+.startText a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.center {
+  display: grid;
+  gap: var(--sp2);
+}
+
+.end {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--sp4);
+}
+
+.end a svg {
+  font-size: var(--fs6);
+}
+
+.controlsLayout {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--sp3);
+}
+
+.controlsLayout button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  padding: 0;
+  box-shadow: var(--box-shadow-1);
+}
+
+.controlsLayout button:nth-child(2) {
+  width: 45px;
+  height: 45px;
+}
+
+.controlsLayout button svg {
+  font-size: var(--fs6);
+}
+
+.sliderLayout {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--sp3);
+}
+
+.volumeLayout {
+  display: grid;
+  grid-template-columns: auto 100px;
+  justify-content: end;
+  align-items: center;
+  gap: var(--sp3);
+}
+
+.volumeLayout svg {
+  font-size: var(--fs6);
+}
+
+.queueButtonContainer > * {
+  display: grid;
+  padding: var(--sp2);
+  font-size: var(--fs6);
+}
+
+.queueButtonContainerActive > * {
+  color: var(--color-primary);
+}
+
+.queueButtonContainer > *:hover,
+.queueButtonContainer > *:active,
+.queueButtonContainerActive > *:hover,
+.queueButtonContainerActive > *:active {
+  filter: brightness(1.3) saturate(1.2);
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: 250px 1fr 250px;
+  }
+
+  .start {
+    justify-content: start;
+  }
+
+  .end {
+    justify-content: end;
+  }
+}

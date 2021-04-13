@@ -1,0 +1,26 @@
+.root {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  margin: var(--sp5) var(--sp5);
+}
+
+.layout {
+  display: grid;
+  gap: var(--sp4);
+  justify-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: var(--fs9);
+  color: var(--text-color-e);
+}
+
+.heading {
+  color: var(--text-color-e);
+  font-weight: 700;
+  font-size: var(--fs4);
+}

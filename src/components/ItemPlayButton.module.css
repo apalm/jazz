@@ -1,0 +1,29 @@
+.playButtonContainer {
+  --playButtonSize: 45px;
+  display: none;
+  position: absolute;
+  top: calc(var(--imageSize) - var(--playButtonSize) - var(--sp3));
+  right: var(--sp3);
+}
+
+.playButtonContainer button {
+  width: var(--playButtonSize);
+  height: var(--playButtonSize);
+  border-radius: 50%;
+  padding: 0;
+  box-shadow: var(--box-shadow-1);
+}
+
+.playButtonContainer:hover,
+.playButtonContainerAlbumCurrent {
+  display: block;
+}
+
+.playButtonContainer button:not(:disabled):hover,
+.playButtonContainer button:not(:disabled):active {
+  opacity: 1;
+}
+
+.playButtonContainer button svg {
+  font-size: var(--fs6);
+}

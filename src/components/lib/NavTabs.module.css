@@ -1,0 +1,62 @@
+.navList {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  overflow-x: auto;
+  position: relative;
+  /* top: 1px; */
+  /* So scrollbar doesn't cover up the list */
+  /* padding-block-end: var(--sp3); */
+  /* margin-block-end: calc(-1 * var(--sp3)); */
+  border-block-end: 1px solid var(--color-neutral-200);
+}
+
+.link {
+  display: block;
+  line-height: 1;
+  color: var(--color-neutral-500);
+  background: none;
+  border: none;
+  font-size: var(--fs1);
+  padding: var(--sp2) var(--sp4) var(--sp2);
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.link:hover,
+.link:active {
+  color: var(--color-neutral-700);
+}
+
+.linkActive,
+.linkActive:hover,
+.linkActive:active {
+  color: var(--color-neutral-800);
+  font-weight: 500;
+  background-color: white;
+  border-top-left-radius: var(--br2);
+  border-top-right-radius: var(--br2);
+  border-top: 1px solid var(--color-neutral-200);
+  border-left: 1px solid var(--color-neutral-200);
+  border-right: 1px solid var(--color-neutral-200);
+}
+
+.navTabLayout {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--sp2);
+}
+
+.link svg {
+  color: var(--color-neutral-300);
+}
+
+.linkActive svg,
+.linkActive:hover svg,
+.linkActive:active svg {
+  color: var(--color-neutral-500);
+}

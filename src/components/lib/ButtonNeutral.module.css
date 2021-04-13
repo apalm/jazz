@@ -1,0 +1,24 @@
+.buttonNeutral {
+  background-color: var(--color-neutral-000);
+  border: 1px solid var(--color-neutral-200);
+  color: var(--color-neutral-700);
+  text-transform: var(--button-neutral-text-transform);
+}
+
+.buttonNeutral:focus {
+  box-shadow: var(--color-neutral-100) 0 0 0 4px;
+}
+
+.buttonNeutral:not(:disabled):active {
+  opacity: 0.7;
+}
+
+@media (hover: hover) {
+  .buttonNeutral:not(:disabled):hover {
+    opacity: 0.8;
+  }
+
+  .buttonNeutral:not(:disabled):active {
+    opacity: 0.7;
+  }
+}

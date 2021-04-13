@@ -1,0 +1,63 @@
+.root {
+  display: grid;
+  gap: var(--sp4);
+  padding: var(--sp6) var(--sp5);
+}
+
+.heading {
+  font-size: var(--fs6);
+  font-weight: 700;
+  color: var(--text-color-e);
+}
+
+.layout {
+  --imageSize: 150px;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, calc(var(--imageSize) + var(--sp6)));
+  /* justify-content: center; */
+  /* justify-items: center; */
+  gap: var(--sp4);
+}
+
+.item {
+  list-style: none;
+  position: relative;
+}
+
+.item a {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: var(--sp5) var(--sp4);
+  border-radius: var(--br4);
+  gap: var(--sp4);
+  font-weight: 700;
+  font-size: var(--fs3);
+  color: var(--text-color-e);
+  text-decoration: none;
+  background-color: var(--surface-background-color);
+  box-shadow: var(--card-box-shadow);
+  transition: all 0.2s ease-in;
+}
+
+.itemImageContainer > * {
+  width: var(--imageSize) !important;
+  height: var(--imageSize) !important;
+  padding: var(--sp7) !important;
+}
+
+.itemImageContainer:hover + * {
+  display: block;
+}
+
+.emptyContainer {
+  margin: 0 auto;
+}
+
+@media (hover: hover) {
+  .item a:hover {
+    filter: contrast(0.92);
+    /* filter: brightness(1.1) saturate(1.1); */
+  }
+}

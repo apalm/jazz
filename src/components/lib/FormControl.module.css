@@ -1,0 +1,67 @@
+.formControl {
+  display: inline-block;
+  font-family: inherit;
+  font-size: var(--fs3);
+  vertical-align: middle;
+  border-radius: var(--form-control-border-radius);
+  padding: 0 var(--sp3);
+  border: none;
+  -webkit-appearance: none;
+  outline: 0;
+  height: var(--form-control-height);
+}
+
+.formControlSm {
+  height: var(--form-control-sm-height);
+}
+
+.formControlXs {
+  height: var(--form-control-xs-height);
+}
+
+.formControlOutline {
+  background-color: var(--form-control-outline-background-color);
+  color: var(--form-control-color);
+  border: 1px solid var(--form-control-border-color);
+}
+
+.formControlOutline::placeholder {
+  color: var(--form-control-color-placeholder);
+}
+
+.formControlFilled {
+  background-color: var(--form-control-filled-background-color);
+  color: var(--form-control-color);
+  border: 1px solid var(--form-control-border-color);
+}
+
+.formControlFilled::placeholder {
+  color: var(--form-control-color-placeholder);
+}
+
+.formControl:focus {
+  box-shadow: var(--form-control-focused-box-shadow);
+  border-color: var(--form-control-focused-border-color);
+}
+
+.formControl:disabled,
+.formControl[readonly] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.invalid {
+  border-color: var(--color-danger-500);
+  box-shadow: inset 0 1px 2px 0 var(--color-danger-100);
+}
+
+.invalid:focus {
+  box-shadow: var(--form-control-errored-box-shadow);
+  border-color: var(--form-control-errored-border-color);
+}
+
+@media (min-width: 768px) {
+  .formControl {
+    font-size: var(--fs2);
+  }
+}

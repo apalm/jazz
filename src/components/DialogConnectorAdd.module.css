@@ -1,0 +1,31 @@
+.list {
+  display: grid;
+  gap: var(--sp4);
+}
+
+.listItem {
+  display: grid;
+  gap: var(--sp4);
+  list-style: none;
+  border: 1px solid var(--list-border-color);
+  padding: var(--sp4) var(--sp4);
+  border-radius: var(--br2);
+  background-color: var(--surface-background-color);
+}
+
+.logoContainer {
+  background-color: white;
+  padding: 0 var(--sp4);
+  border-radius: var(--br2);
+  border: 1px solid var(--list-border-color);
+}
+
+.logoContainer > * {
+  vertical-align: middle;
+  max-width: 150px;
+}
+
+.form {
+  display: grid;
+  gap: var(--sp5);
+}

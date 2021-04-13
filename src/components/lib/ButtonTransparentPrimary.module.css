@@ -1,0 +1,26 @@
+.buttonTransparentPrimary {
+  background: transparent;
+  color: var(--color-primary);
+  border-radius: var(--button-border-radius);
+  box-shadow: none;
+  text-transform: var(--button-transparent-primary-text-transform);
+  transition: all 0.2s ease-in;
+}
+
+.buttonTransparentPrimary:focus {
+  box-shadow: var(--form-control-focused-box-shadow);
+}
+
+.buttonTransparentPrimary:not(:disabled):active {
+  filter: brightness(1.1) saturate(1.1);
+}
+
+@media (hover: hover) {
+  .buttonTransparentPrimary:not(:disabled):hover {
+    filter: brightness(1.1) saturate(1.1);
+  }
+
+  .buttonTransparentPrimary:not(:disabled):active {
+    filter: brightness(1.1) saturate(1.1);
+  }
+}

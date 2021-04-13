@@ -1,0 +1,301 @@
+/* reset */
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+}
+
+input[type="radio"] {
+  margin: 0;
+}
+
+/* end reset */
+
+:root {
+  --color-primary-lll: hsl(280, 68%, 92%);
+  --color-primary-ll: hsl(280, 68%, 80%);
+  --color-primary-l: hsl(280, 68%, 60%);
+  --color-primary: hsl(280, 68%, 48%);
+  --color-primary-d: hsl(280, 68%, 35%);
+
+  --color-secondary: rgb(220, 0, 234);
+
+  --color-neutral-000: hsl(216, 33%, 97%);
+  --color-neutral-100: hsl(214, 15%, 91%);
+  --color-neutral-200: hsl(210, 16%, 82%);
+  --color-neutral-300: hsl(211, 13%, 65%);
+  --color-neutral-400: hsl(211, 10%, 53%);
+  --color-neutral-500: hsl(211, 12%, 43%);
+  --color-neutral-600: hsl(209, 14%, 37%);
+  --color-neutral-700: hsl(209, 18%, 30%);
+  --color-neutral-800: hsl(209, 20%, 16%);
+  --color-neutral-900: hsl(210, 24%, 9%);
+
+  --color-success-000: hsl(125, 65%, 93%);
+  --color-success-100: hsl(127, 65%, 85%);
+  --color-success-200: hsl(124, 63%, 74%);
+  --color-success-300: hsl(123, 53%, 55%);
+  --color-success-400: hsl(123, 57%, 45%);
+  --color-success-500: hsl(122, 73%, 35%);
+  --color-success-600: hsl(122, 80%, 29%);
+  --color-success-700: hsl(125, 79%, 26%);
+  --color-success-800: hsl(125, 86%, 20%);
+  --color-success-900: hsl(125, 97%, 14%);
+
+  --color-danger-000: hsl(0, 100%, 95%);
+  --color-danger-100: hsl(0, 100%, 87%);
+  --color-danger-200: hsl(0, 100%, 80%);
+  --color-danger-300: hsl(0, 91%, 69%);
+  --color-danger-400: hsl(0, 83%, 62%);
+  --color-danger-500: hsl(356, 75%, 53%);
+  --color-danger-600: hsl(354, 85%, 44%);
+  --color-danger-700: hsl(352, 90%, 35%);
+  --color-danger-800: hsl(350, 94%, 28%);
+  --color-danger-900: hsl(348, 94%, 20%);
+
+  --color-info-000: hsl(45, 100%, 96%);
+  --color-info-100: hsl(45, 90%, 88%);
+  --color-info-200: hsl(45, 86%, 81%);
+  --color-info-300: hsl(43, 90%, 76%);
+  --color-info-400: hsl(43, 89%, 70%);
+  --color-info-500: hsl(42, 78%, 60%);
+  --color-info-600: hsl(42, 63%, 48%);
+  --color-info-700: hsl(43, 72%, 37%);
+  --color-info-800: hsl(43, 77%, 27%);
+  --color-info-900: hsl(43, 86%, 17%);
+
+  --ff0: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif;
+  /* --ff0: "Inter", sans-serif; */
+
+  /* type scale */
+  --fs0: 13px;
+  --fs1: 14px;
+  --fs2: 15px;
+  --fs3: 16px;
+  --fs4: 17px;
+  --fs5: 18px;
+  --fs6: 22px;
+  --fs7: 28px;
+  --fs8: 34px;
+  --fs9: 48px;
+  --fsA: 60px;
+  --fsB: 72px;
+
+  /* spacing */
+  --sp0: 2px;
+  --sp1: 4px;
+  --sp2: 8px;
+  --sp3: 12px;
+  --sp4: 16px;
+  --sp5: 24px;
+  --sp6: 32px;
+  --sp7: 48px;
+  --sp8: 64px;
+  --sp9: 96px;
+  --spA: 128px;
+  --spB: 256px;
+  --spC: 384px;
+  --spD: 512px;
+  --spE: 640px;
+  --spF: 768px;
+
+  /* border-radius */
+  --br0: 1px;
+  --br2: 2px;
+  --br2: 4px;
+  --br3: 8px;
+  --br4: 12px;
+  --br5: 16px;
+  --br6: 20px;
+
+  --z-index-sidebar: 2;
+  --z-index-header-menu: 3;
+  --z-index-header: 4;
+  --z-index-floating-action-button: 5;
+  --z-index-dialog-overlay: 6;
+  --z-index-dialog-content: 7;
+  --z-index-tooltip: 8;
+  --z-index-popover: 9;
+  --z-index-toast: 10;
+
+  --form-control-height: 42px;
+  --form-control-sm-height: 36px;
+  --form-control-xs-height: 30px;
+  --form-control-border-radius: var(--br2);
+  --form-control-padding-horizontal: var(--sp4);
+
+  --button-height: 44px;
+  --button-padding: 0 20px;
+  --button-border-radius: var(--br2);
+  --button-font-size: var(--fs2);
+  --button-primary-text-transform: none;
+  --button-danger-text-transform: none;
+  --button-neutral-text-transform: none;
+  --button-secondary-text-transform: none;
+  --button-secondary-danger-text-transform: none;
+  --button-transparent-primary-text-transform: none;
+  --button-transparent-neutral-text-transform: none;
+  --button-sm-height: 36px;
+  --button-sm-padding: 0 14px;
+  --button-sm-border-radius: var(--br2);
+  --button-sm-font-size: var(--fs2);
+  --button-xs-height: 30px;
+  --button-xs-padding: 0 14px;
+  --button-xs-border-radius: var(--br2);
+  --button-xs-font-size: var(--fs1);
+  --button-xxs-height: 26px;
+  --button-xxs-padding: 0 11px;
+  --button-xxs-border-radius: var(--br2);
+  --button-xxs-font-size: var(--fs1);
+
+  --label-font-size: var(--fs2);
+  --label-font-weight: 500;
+
+  --menu-button-menu-popover-border-radius: var(--br2);
+
+  --well-background-color: var(--surface-background-color);
+  --well-heading-color: var(--text-color-e);
+  --well-color: var(--text-color);
+
+  --card-border-radius: var(--br2);
+  --card-box-shadow: var(--box-shadow-1);
+
+  --image-album-border-radius: var(--br3);
+  --image-artist-border-radius: 50%;
+
+  --header-height: 45px;
+  --sidebar-width: 250px;
+
+  --pg-margin-horizontal: var(--sp4);
+  --pg-margin-block-start: var(--sp4);
+  --pg-margin-block-end: var(--sp5);
+  --pg-margin: var(--pg-margin-block-start) var(--pg-margin-horizontal)
+    var(--pg-margin-block-end) var(--pg-margin-horizontal);
+}
+
+@media screen and (hover: hover) and (min-width: 768px) {
+  :root {
+    --pg-margin-block-end: var(--sp8);
+  }
+}
+
+body {
+  font-family: var(--ff0);
+  font-size: var(--fs2);
+  font-display: optional;
+  line-height: 1.4;
+  background-color: var(--body-background-color);
+  color: var(--text-color);
+  /* https://stackoverflow.com/a/11885330 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overscroll-behavior-y: none;
+  user-select: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* ::selection {
+  background-color: var(--color-info-000);
+} */

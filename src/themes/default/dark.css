@@ -1,0 +1,58 @@
+html.dark {
+  --box-shadow-0: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  /* stub comment so lines up with dark.css */
+  --box-shadow-1: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+  /* stub comment so lines up with dark.css */
+  --box-shadow-2: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+  /* stub comment so lines up with dark.css */
+  --box-shadow-3: 0 15px 25px rgba(0, 0, 0, 0.15),
+    0 5px 10px rgba(0, 0, 0, 0.05);
+  --box-shadow-4: 0 20px 40px rgba(0, 0, 0, 0.2);
+
+  --body-background-color: var(--color-neutral-900);
+  --surface-background-color: var(--color-neutral-800);
+  --list-border-color: var(--color-neutral-800);
+  --list-border: 1px solid var(--list-border-color);
+  --chrome-border-color: var(--color-neutral-800);
+
+  --text-color: var(--color-neutral-300);
+  /* emphasize */
+  --text-color-e: var(--color-neutral-000);
+  /* deemphasize */
+  --text-color-d: var(--color-neutral-500);
+  --text-color-dd: var(--color-neutral-600);
+
+  --header-background-color: var(--color-neutral-900);
+  --header-color: var(--color-neutral-200);
+  --header-border-color: var(--color-neutral-800);
+
+  --card-background-color: var(--color-neutral-800);
+  --card-border: none;
+  --card-box-shadow: 0 1px 2px var(--color-neutral-900);
+  --card-color: white;
+
+  --heading-1-color: white;
+  --heading-2-color: var(--color-primary);
+  --heading-3-color: var(--color-neutral-400);
+
+  --label-color-text: var(--color-neutral-100);
+
+  --form-control-filled-background-color: var(--color-neutral-800);
+  --form-control-outline-background-color: var(--color-neutral-900);
+  --form-control-color: var(--color-neutral-000);
+  --form-control-color-placeholder: var(--color-neutral-400);
+  --form-control-border-color: var(--color-neutral-700);
+  --form-control-focused-border-color: var(--color-primary-l);
+  --form-control-focused-box-shadow: var(--color-primary-ll) 0 0 0 4px;
+  --form-control-errored-border-color: var(--color-danger-500);
+  --form-control-errored-box-shadow: var(--color-danger-100) 0 0 0 4px;
+
+  --slider-track-background-color: var(--color-neutral-500);
+  --slider-range-background-color: var(--color-neutral-200);
+  --slider-handle-background-color: white;
+
+  --menu-button-menu-list-background-color: var(--color-neutral-800);
+  --menu-button-menu-item-selected-background-color: var(--color-neutral-700);
+
+  --avatar-background-color: var(--color-neutral-600);
+}

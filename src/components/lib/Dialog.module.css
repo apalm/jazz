@@ -1,0 +1,97 @@
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  z-index: var(--z-index-dialog-overlay);
+}
+
+.content {
+  background: var(--body-background-color);
+  width: 90vw;
+  overflow-y: scroll;
+  padding: 0;
+  margin: var(--sp8) auto;
+  border-radius: var(--br3);
+  box-shadow: var(--box-shadow-1);
+  z-index: var(--z-index-dialog-content);
+}
+
+.heading {
+  font-size: var(--fs6);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text-color-e);
+}
+
+.alertDialogHeader {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--sp4);
+  padding: var(--sp4) var(--sp5);
+  border-block-end: 1px solid var(--list-border-color);
+}
+
+.alertDialogBody {
+  padding: var(--sp4) var(--sp5);
+}
+
+.alertDialogBodyScrollable {
+  overflow-y: auto;
+}
+
+.alertDialogActions {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  align-items: center;
+  gap: var(--sp3);
+  padding: var(--sp3) var(--sp5);
+  border-block-start: 1px solid var(--list-border-color);
+  background-color: var(--surface-background-color);
+}
+
+.alertDialogActions button {
+  min-width: 105px;
+}
+
+.alertDialogLoadingContainer {
+  width: 150px;
+  padding: 0;
+  border-radius: var(--br3);
+  z-index: var(--z-index-dialog-content);
+}
+
+.alertDialogLoading {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: var(--sp4);
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 80vw;
+    max-width: 620px;
+    margin: var(--sp8) auto;
+  }
+
+  .contentLg {
+    max-width: 1000px;
+  }
+
+  .closeButtonContainer {
+    top: var(--sp4);
+    left: var(--sp4);
+  }
+}
+
+@media (hover: hover) {
+  .closeButton:hover {
+    background: hsla(0, 100%, 100%, 0.1);
+  }
+
+  .closeButton:active {
+    background: hsla(0, 100%, 100%, 0.2);
+  }
+}

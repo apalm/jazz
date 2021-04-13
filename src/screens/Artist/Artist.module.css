@@ -1,0 +1,75 @@
+.cover {
+  display: grid;
+  align-items: end;
+  width: 100%;
+  height: 200px;
+  font-size: var(--fsA);
+  font-weight: 700;
+  padding: var(--sp6) var(--sp5);
+  color: var(--text-color-e);
+}
+
+.coverText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content {
+  padding: var(--sp4) var(--sp5);
+}
+
+.heading {
+  font-size: var(--fs6);
+  font-weight: 700;
+  margin: 0 0 var(--sp3) 0;
+  color: var(--text-color-e);
+}
+
+.layout {
+  --imageSize: 150px;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(var(--imageSize), 1fr)); */
+  grid-template-columns: repeat(auto-fit, var(--imageSize));
+  /* justify-content: center; */
+  /* justify-items: center; */
+  gap: var(--sp5);
+}
+
+.item {
+  list-style: none;
+  position: relative;
+}
+
+.item a {
+  text-decoration: none;
+}
+
+.item img {
+  display: block;
+  object-fit: cover;
+  border-radius: var(--image-album-border-radius);
+}
+
+.item img:hover + * {
+  display: block;
+}
+
+.itemText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: var(--sp3) 0 var(--sp0);
+  font-weight: 700;
+  font-size: var(--fs4);
+  color: var(--text-color-e);
+}
+
+.itemSubText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: var(--fs2);
+  color: var(--text-color);
+}

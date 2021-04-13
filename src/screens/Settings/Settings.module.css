@@ -1,0 +1,83 @@
+.root {
+  display: grid;
+  padding: var(--sp6) var(--sp5);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: var(--fs6);
+  font-weight: 700;
+  color: var(--text-color-e);
+  margin: 0 0 var(--sp6) 0;
+}
+
+.items {
+  display: grid;
+  gap: var(--sp6);
+}
+
+.item {
+  display: grid;
+  gap: var(--sp4) var(--sp5);
+}
+
+.itemTitle {
+  font-size: var(--fs4);
+  font-weight: 700;
+  color: var(--text-color-e);
+  margin: 0 0 var(--sp2) 0;
+}
+
+.itemAdditionalContent {
+  margin: var(--sp2) 0 0 0;
+}
+
+.accountList {
+  display: grid;
+  gap: var(--sp4);
+  border: 1px solid var(--list-border-color);
+  border-radius: var(--br1);
+  padding: var(--sp4) var(--sp4);
+}
+
+.accountListItem {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: var(--sp3) var(--sp4);
+  list-style: none;
+  background-color: var(--surface-background-color);
+  border-radius: var(--br1);
+  padding: var(--sp4) var(--sp4);
+}
+
+.accountListItemTextEmphasis {
+  font-weight: 500;
+  color: var(--text-color-e);
+}
+
+.logoContainer {
+  background-color: white;
+  padding: 0 var(--sp4);
+  border-radius: var(--br2);
+  border: 1px solid var(--list-border-color);
+  margin: 0 0 var(--sp3);
+}
+
+.logoContainer > * {
+  vertical-align: middle;
+  max-width: 150px;
+}
+
+@media (min-width: 768px) {
+  .item {
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .itemAdditionalContent {
+    grid-column: 1 / span 2;
+  }
+}

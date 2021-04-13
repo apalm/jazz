@@ -1,0 +1,36 @@
+[data-reach-menu-popover] {
+  z-index: var(--z-index-popover);
+  min-width: 180px;
+}
+
+[data-reach-menu-list] {
+  font: inherit;
+  border: none;
+  border-radius: var(--menu-button-menu-popover-border-radius);
+  box-shadow: var(--box-shadow-1);
+  padding: var(--sp2) 0;
+  background-color: var(--menu-button-menu-list-background-color);
+  color: var(--text-color-e);
+}
+
+[data-reach-menu-item] {
+  padding: var(--sp2) var(--sp4);
+}
+
+[data-reach-menu-item][data-selected] {
+  background-color: var(--menu-button-menu-item-selected-background-color);
+  color: inherit;
+}
+
+.menuButtonArrow {
+  margin-inline-start: var(--sp1);
+}
+
+.menuItemDanger {
+  color: var(--color-danger-600);
+}
+
+.menuItemDanger[data-selected] {
+  background-color: var(--color-danger-000);
+  color: var(--color-danger-600);
+}

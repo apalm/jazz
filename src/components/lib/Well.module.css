@@ -1,0 +1,40 @@
+.well {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--well-background-color);
+  padding: var(--sp6);
+  border-radius: var(--br2);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05),
+    inset 0 1px 2px 0 rgba(78, 83, 90, 0.1);
+}
+
+.wellHeading {
+  font-size: var(--fs4);
+  font-weight: 700;
+  color: var(--well-heading-color);
+}
+
+.wellText {
+  color: var(--well-color);
+  margin-block-start: var(--sp2);
+}
+
+.wellActionContainer {
+  margin-block-start: var(--sp4);
+}
+
+.wellActionContainerMarginBlockStartSm {
+  margin-block-start: var(--sp2);
+}
+
+.sm {
+  padding-block-start: var(--sp4);
+  padding-block-end: var(--sp4);
+}
+
+.xs {
+  padding-block-start: var(--sp2);
+  padding-block-end: var(--sp2);
+}

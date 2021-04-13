@@ -1,0 +1,25 @@
+.buttonDanger {
+  background: var(--color-danger-600);
+  color: white;
+  font-weight: 700;
+  border: 1px solid var(--color-danger-600);
+  text-transform: var(--button-danger-text-transform);
+}
+
+.buttonDanger:focus {
+  box-shadow: var(--color-danger-100) 0 0 0 4px;
+}
+
+.buttonDanger:not(:disabled):active {
+  filter: brightness(1.1) saturate(1.1);
+}
+
+@media (hover: hover) {
+  .buttonDanger:not(:disabled):hover {
+    filter: brightness(1.1) saturate(1.1);
+  }
+
+  .buttonDanger:not(:disabled):active {
+    filter: brightness(1.1) saturate(1.1);
+  }
+}

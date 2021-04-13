@@ -1,0 +1,37 @@
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.content {
+  overflow-y: auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--sp5);
+  padding: var(--sp2) var(--sp4);
+  border-block-end: 1px solid var(--chrome-border-color);
+}
+
+.header nav {
+  justify-content: center;
+}
+
+.logoLink {
+  display: flex;
+  justify-content: center;
+  font-size: var(--fs6);
+  color: var(--text-color-e);
+}
+
+.settingsLink {
+  display: flex;
+  justify-content: center;
+  font-size: var(--fs4);
+  color: var(--text-color-e);
+}

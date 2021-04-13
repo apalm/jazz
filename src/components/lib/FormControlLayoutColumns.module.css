@@ -1,0 +1,70 @@
+.root {
+  display: grid;
+  gap: 0 var(--sp4);
+}
+
+.formControlContainer {
+  display: grid;
+}
+
+.label {
+  display: grid;
+}
+
+.labelInner {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: baseline;
+}
+
+.labelInnerWithEnd {
+  justify-content: space-between;
+}
+
+.labelTextContainer {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: start;
+  justify-self: start;
+  gap: var(--sp1);
+  margin-block-end: var(--sp1);
+}
+
+.labelText {
+  word-break: break-all;
+}
+
+.labelText,
+.labelTextRequiredIndicator {
+  color: var(--label-color-text);
+}
+
+.labelTextRequiredIndicator {
+  font-size: var(--fs0);
+}
+
+.labelEndContainer {
+  justify-self: end;
+}
+
+@media (min-width: 768px) {
+  .root {
+    grid-template-columns: 185px 1fr;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .labelContainer {
+    padding-block-start: var(--sp2);
+  }
+
+  .labelContainerNoPadding {
+    padding: 0;
+  }
+
+  .labelTextContainer {
+    margin: 0;
+  }
+}

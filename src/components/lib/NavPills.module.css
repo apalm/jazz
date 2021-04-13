@@ -1,0 +1,65 @@
+.navList {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: var(--sp2);
+  overflow-x: auto;
+  position: relative;
+  top: 1px;
+  /* box-shadow: inset 0 -1px 0 var(--color-neutral-100); */
+  /* So scrollbar doesn't cover up the list */
+  /* padding-block-end: var(--sp3); */
+  /* margin-block-end: calc(-1 * var(--sp3)); */
+}
+
+.link {
+  display: block;
+  line-height: 1;
+  color: var(--text-color);
+  background: none;
+  border: none;
+  border-radius: var(--br3);
+  font-size: var(--fs1);
+  padding: var(--sp2) var(--sp4);
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.link:hover,
+.link:active {
+  color: var(--text-color-e);
+}
+
+.linkActive,
+.linkActive:hover,
+.linkActive:active {
+  color: var(--color-primary);
+  background-color: var(--color-primary-lll);
+}
+
+.linkDisabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.navTabLayout {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--sp2);
+}
+
+.link svg {
+  color: var(--color-neutral-300);
+}
+
+.linkActive svg,
+.linkActive:hover svg,
+.linkActive:active svg {
+  color: var(--plt-neutral-900);
+}

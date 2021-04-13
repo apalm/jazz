@@ -1,0 +1,50 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-size: var(--button-font-size);
+  font-weight: 500;
+  box-sizing: border-box;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  text-decoration: none;
+  padding: var(--button-padding);
+  height: var(--button-height);
+  outline: none;
+  user-select: none;
+  transition: background-color 0.2s;
+  border: none;
+  border-radius: var(--button-border-radius);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.buttonSm {
+  height: var(--button-sm-height);
+  padding: var(--button-sm-padding);
+  border-radius: var(--button-sm-border-radius);
+  font-size: var(--button-sm-font-size);
+}
+
+.buttonXs {
+  height: var(--button-xs-height);
+  padding: var(--button-xs-padding);
+  border-radius: var(--button-xs-border-radius);
+  font-size: var(--button-xs-font-size);
+}
+
+.buttonXxs {
+  height: var(--button-xxs-height);
+  padding: var(--button-xxs-padding);
+  border-radius: var(--button-xxs-border-radius);
+  font-size: var(--button-xxs-font-size);
+}

@@ -1,0 +1,34 @@
+.root {
+  margin: 15vh var(--pg-margin-horizontal) var(--pg-margin-block-end)
+    var(--pg-margin-horizontal);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: var(--fsA);
+  color: var(--text-color-e);
+  font-weight: 700;
+  margin-block-end: var(--sp2);
+}
+
+.center {
+  margin-block-end: var(--sp6);
+}
+
+.subHeading {
+  font-size: var(--fs6);
+  color: var(--text-color-d);
+}
+
+.linkContainer > a {
+  font-size: var(--fs6);
+}
+
+@media (min-width: 768px) {
+  .root {
+    margin: 15vh auto;
+  }
+}

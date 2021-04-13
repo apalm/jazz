@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+}
+
+.label {
+  display: grid;
+}
+
+.labelInner {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: baseline;
+}
+
+.labelInnerWithEnd {
+  justify-content: space-between;
+}
+
+.labelTextContainer {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: start;
+  justify-self: start;
+  gap: var(--sp1);
+  margin-block-end: var(--sp1);
+  font-weight: var(--label-font-weight);
+}
+
+.labelText,
+.labelTextRequiredIndicator {
+  color: var(--label-color-text);
+  font-size: var(--label-font-size);
+}
+
+.labelTextRequiredIndicator {
+  font-size: var(--fs0);
+}
+
+.labelEndContainer {
+  justify-self: end;
+}

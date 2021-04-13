@@ -1,0 +1,28 @@
+.pressable,
+.pressableOpacity {
+  display: block;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.pressableOpacity:active {
+  opacity: 0.7;
+}
+
+@media (hover: hover) {
+  .pressableOpacity:hover {
+    opacity: 0.8;
+  }
+
+  .pressableOpacity:active {
+    opacity: 0.7;
+  }
+}

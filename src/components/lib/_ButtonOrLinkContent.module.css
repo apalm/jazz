@@ -1,0 +1,22 @@
+.buttonLayout {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: var(--sp2);
+}
+
+.buttonLayoutWithIconStart {
+  padding-inline-end: calc(var(--button-font-size) / 2);
+}
+
+.buttonLayoutWithIconEnd {
+  padding-inline-start: calc(var(--button-font-size) / 2);
+}
+
+.buttonLayout svg {
+  font-size: inherit;
+}
+
+.buttonLayoutSm {
+  gap: var(--sp1);
+}

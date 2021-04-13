@@ -1,0 +1,26 @@
+.circularProgress {
+  height: 36px;
+  width: 36px;
+}
+
+.circularProgressSvg {
+  animation-name: animation_circular_progress;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.circularProgressSvg > * {
+  stroke: var(--text-color-e);
+}
+
+@keyframes animation_circular_progress {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

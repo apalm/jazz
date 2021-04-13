@@ -1,0 +1,25 @@
+.link {
+  cursor: pointer;
+  background: none;
+  color: var(--color-primary);
+  font-weight: 400;
+  font-size: var(--fs2);
+  font-family: var(--ff0);
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  outline: none;
+  text-decoration: underline;
+}
+
+.linkSm {
+  font-size: var(--fs1);
+}
+
+@media (hover: hover) {
+  .link:hover,
+  .link:active {
+    color: var(--color-primary-d);
+  }
+}

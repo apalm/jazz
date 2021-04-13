@@ -1,0 +1,25 @@
+.buttonTransparentNeutral {
+  background: transparent;
+  color: var(--text-color);
+  border-radius: var(--button-border-radius);
+  box-shadow: none;
+  text-transform: var(--button-transparent-neutral-text-transform);
+}
+
+.buttonTransparentNeutral:focus {
+  box-shadow: var(--text-color-dd) 0 0 0 4px;
+}
+
+.buttonTransparentNeutral:not(:disabled):active {
+  filter: brightness(1.1) saturate(1.1);
+}
+
+@media (hover: hover) {
+  .buttonTransparentNeutral:not(:disabled):hover {
+    filter: brightness(1.1) saturate(1.1);
+  }
+
+  .buttonTransparentNeutral:not(:disabled):active {
+    filter: brightness(1.1) saturate(1.1);
+  }
+}

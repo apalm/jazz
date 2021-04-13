@@ -1,0 +1,37 @@
+[data-reach-slider-track] {
+  background-color: var(--slider-track-background-color);
+  border-radius: var(--br2);
+  border: none;
+}
+
+[data-reach-slider-input][data-orientation="horizontal"] {
+  height: 4px;
+}
+
+[data-reach-slider-range] {
+  background-color: var(--slider-range-background-color);
+}
+
+/* Change range background color on track hover */
+[data-reach-slider-track]:hover > *:first-of-type,
+[data-reach-slider-track]:active > *:first-of-type {
+  background-color: var(--color-primary-l);
+}
+
+/* Show handle on track hover */
+[data-reach-slider-track]:hover > *:last-of-type,
+[data-reach-slider-track]:active > *:last-of-type {
+  display: block;
+}
+
+[data-reach-slider-handle] {
+  display: none;
+  background-color: var(--slider-handle-background-color);
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+}
+
+[data-reach-slider-handle]:focus {
+  outline: none;
+}

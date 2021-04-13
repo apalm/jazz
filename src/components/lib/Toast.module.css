@@ -1,0 +1,32 @@
+.toast {
+  z-index: var(--z-index-toast);
+  border-radius: var(--br2);
+  font-size: var(--fs4);
+  padding: var(--sp3) var(--sp5);
+  margin: 0;
+  box-shadow: none;
+  font: inherit;
+  line-height: 1.5;
+}
+
+.toastBody {
+  padding: 0;
+}
+
+.toastSuccess {
+  background-color: var(--color-success-500);
+  color: white;
+}
+
+.toastSuccess svg {
+  color: inherit;
+}
+
+.toastError {
+  background-color: var(--color-danger-500);
+  color: white;
+}
+
+.toastError svg {
+  color: inherit;
+}

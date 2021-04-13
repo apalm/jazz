@@ -1,0 +1,205 @@
+.top {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: var(--sp5);
+  padding: var(--sp5) var(--sp5) var(--sp5);
+  border-block-end: var(--list-border);
+  text-align: center;
+  background: linear-gradient(transparent, 35%, var(--body-background-color));
+}
+
+.imageAlbum {
+  display: block;
+  object-fit: cover;
+  border-radius: var(--image-album-border-radius);
+  /* box-shadow: var(--box-shadow-0); */
+}
+
+.topLayoutSub {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: var(--sp4);
+}
+
+.heading {
+  color: var(--text-color-e);
+  font-size: var(--fs9);
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 30ch;
+}
+
+.infoLayout {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.infoLayout img {
+  margin: 0 var(--sp4) 0 0;
+}
+
+.infoLayout > *:not(:last-child):after {
+  content: "•";
+  margin: 0 var(--sp2);
+}
+
+.infoEmphasis a {
+  font-weight: 700;
+  color: var(--text-color-e);
+}
+
+.actionsContainer {
+  padding: var(--sp4) var(--sp5);
+  border-block-end: var(--list-border);
+}
+
+.actionsContainer button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  box-shadow: var(--box-shadow-1);
+}
+
+.actionsContainer button svg {
+  font-size: var(--fs7);
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: 20px minmax(100px, 300px) auto;
+  align-items: center;
+  gap: var(--sp6);
+  padding: var(--sp3) var(--sp5);
+  border-block-end: var(--list-border);
+}
+
+.listItem > *:nth-child(3),
+.listItem > *:nth-child(4) {
+  display: none;
+}
+
+.listItemTextEmphasis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-color-e);
+}
+
+.listItemText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.listItemCurrentText {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.listItemTrackNumber {
+  display: grid;
+  /* TODO: use start or end if I can fix alignment on hover */
+  justify-content: center;
+  align-items: end;
+}
+
+.listItem .listItemTrackNumber button {
+  box-shadow: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  width: initial;
+  height: initial;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+.listItem .listItemTrackNumber button svg {
+  font-size: var(--fs5);
+}
+
+.listItem .listItemTrackNumber button > *:nth-child(1) {
+  display: initial;
+}
+
+.listItem .listItemTrackNumber button > *:nth-child(2) {
+  display: none;
+}
+
+.listItemDuration {
+  justify-self: end;
+}
+
+.listItemMenuButtonContainer svg {
+  font-size: var(--fs5);
+}
+
+.copyright {
+  padding: var(--sp5) var(--sp5) var(--sp6);
+  font-size: var(--fs0);
+}
+
+.copyright::before {
+  content: "© ";
+}
+
+@media (hover: hover) {
+  .infoEmphasis a:not(:hover) {
+    text-decoration: none;
+  }
+
+  .infoEmphasis a:hover,
+  .infoEmphasis a:active {
+    color: var(--text-color-e);
+  }
+
+  .listItem:hover {
+    background-color: var(--surface-background-color);
+  }
+
+  .listItem .listItemTrackNumber button:hover {
+    background-color: inherit;
+  }
+
+  .listItem:hover .listItemTrackNumber button > *:nth-child(1) {
+    display: none;
+  }
+
+  .listItem:hover .listItemTrackNumber button > *:nth-child(2) {
+    display: initial;
+  }
+}
+
+@media (min-width: 768px) {
+  .top {
+    grid-template-columns: auto 1fr;
+    justify-content: start;
+    justify-items: start;
+    align-items: center;
+    text-align: start;
+  }
+
+  .topLayoutSub {
+    justify-content: start;
+    justify-items: start;
+  }
+
+  .heading {
+    font-size: var(--fsA);
+    line-height: 1;
+  }
+
+  .listItem {
+    grid-template-columns: 20px minmax(100px, 300px) minmax(100px, 100%) 50px auto;
+  }
+
+  .listItem > *:nth-child(3),
+  .listItem > *:nth-child(4) {
+    display: initial;
+  }
+}

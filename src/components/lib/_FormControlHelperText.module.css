@@ -1,0 +1,9 @@
+.formControlHelperText {
+  margin-block-start: var(--sp2);
+  font-size: var(--fs0);
+  color: var(--text-color-d);
+}
+
+.formControlHelperTextError {
+  color: var(--color-danger-600);
+}

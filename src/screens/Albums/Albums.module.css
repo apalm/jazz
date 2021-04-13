@@ -1,0 +1,75 @@
+.root {
+  --imageSize: 200px;
+  display: grid;
+  gap: var(--sp4);
+  padding: var(--sp6) var(--sp5);
+}
+
+.heading {
+  font-size: var(--fs6);
+  font-weight: 700;
+  color: var(--text-color-e);
+}
+
+.layout {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(var(--imageSize), 1fr)); */
+  grid-template-columns: repeat(auto-fit, var(--imageSize));
+  /* justify-content: center; */
+  /* justify-items: center; */
+  gap: var(--sp5);
+}
+
+.item {
+  list-style: none;
+  position: relative;
+}
+
+.item > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.item img {
+  display: block;
+  object-fit: cover;
+  border-radius: var(--image-album-border-radius);
+}
+
+.item img:hover + * {
+  display: block;
+}
+
+.itemText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: var(--sp3) 0 1px;
+  font-weight: 700;
+  font-size: var(--fs4);
+  color: var(--text-color-e);
+}
+
+.itemSubText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: var(--fs2);
+  color: var(--text-color);
+}
+
+.artistLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.emptyContainer {
+  margin: 0 auto;
+}
+
+@media (hover: hover) {
+  .artistLink:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,102 @@
+:root {
+  --avatar-xs-size: 26px;
+  --avatar-sm-size: 32px;
+  --avatar-size: 40px;
+  --avatar-lg-size: 48px;
+  --avatar-xl-size: 64px;
+  --avatar-xxl-size: 120px;
+}
+
+.avatar {
+  position: relative;
+  object-fit: cover;
+  text-align: center;
+  border-radius: 50%;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  background-color: var(--avatar-background-color);
+  color: var(--text-color-e);
+  font-weight: 500;
+  font-size: var(--fs3);
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.avatar[src$=".svg"] {
+  object-fit: contain;
+  padding: 7px;
+}
+
+.xs {
+  width: var(--avatar-xs-size);
+  height: var(--avatar-xs-size);
+  font-size: var(--fs2);
+}
+
+.sm {
+  width: var(--avatar-sm-size);
+  height: var(--avatar-sm-size);
+}
+
+.lg {
+  width: var(--avatar-lg-size);
+  height: var(--avatar-lg-size);
+  font-size: var(--fs6);
+}
+
+.xl {
+  width: var(--avatar-xl-size);
+  height: var(--avatar-xl-size);
+  font-size: var(--fs6);
+}
+
+.xxl {
+  width: var(--avatar-xxl-size);
+  height: var(--avatar-xxl-size);
+  font-size: var(--fs9);
+}
+
+.fallback {
+  display: inline-flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.fallbackOutline {
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.rectangular {
+  border-radius: var(--br3);
+}
+
+.avatarGroup {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+}
+
+.avatarGroup > * {
+  margin-left: -12px;
+}
+
+.avatarGroup > .avatar:first-of-type {
+  margin: 0;
+}
+
+.avatarGroupEmpty {
+  justify-content: center;
+  align-items: center;
+  padding: var(--sp1) var(--sp3);
+  background-color: white;
+  border-radius: var(--br4);
+  border: 1px solid var(--color-neutral-100);
+  text-align: center;
+}
+
+.avatarGroupEmptyText {
+  color: var(--color-neutral-500);
+}

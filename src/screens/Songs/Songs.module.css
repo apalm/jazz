@@ -1,0 +1,118 @@
+.root {
+  display: grid;
+  gap: var(--sp4);
+  padding: var(--sp6) 0;
+}
+
+.contentContainer {
+  padding: 0 var(--sp5);
+}
+
+.heading {
+  font-size: var(--fs6);
+  font-weight: 700;
+  color: var(--text-color-e);
+}
+
+.emptyContainer {
+  margin: 0 auto;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: auto minmax(50px, 300px) minmax(50px, 300px) auto;
+  align-items: center;
+  gap: var(--sp6);
+  padding: var(--sp2) var(--sp5);
+  border-block-end: var(--list-border);
+}
+
+.listItem:first-of-type {
+  border-block-start: 1px solid var(--list-border-color);
+}
+
+.listItem > *:nth-child(4),
+.listItem > *:nth-child(5) {
+  display: none;
+}
+
+.listItemTextEmphasis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-color-e);
+}
+
+.listItemText,
+.listItemLink {
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.listItemCurrentText {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.listItemStart {
+  display: grid;
+  justify-content: start;
+}
+
+.listItem .listItemStart button {
+  box-shadow: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  width: initial;
+  height: initial;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+.listItem .listItemStart button svg {
+  font-size: var(--fs5);
+}
+
+.listItemDuration {
+  justify-self: end;
+}
+
+.listItemMenuButtonContainer svg {
+  font-size: var(--fs5);
+}
+
+@media (hover: hover) {
+  .listItem:hover {
+    background-color: var(--surface-background-color);
+  }
+
+  .listItem .listItemStart button:hover {
+    background-color: inherit;
+  }
+
+  .listItemLink:not(:hover) {
+    text-decoration: none;
+  }
+
+  .listItemLink:hover,
+  .listItemLink:active {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 768px) {
+  .listItem {
+    grid-template-columns:
+      auto minmax(50px, 300px) minmax(50px, 300px) minmax(50px, 100%)
+      50px auto;
+  }
+
+  .listItem > *:nth-child(4),
+  .listItem > *:nth-child(5) {
+    display: initial;
+  }
+}

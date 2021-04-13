@@ -1,0 +1,16 @@
+.label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: start;
+  align-items: center;
+  line-height: 1;
+  gap: var(--sp3);
+  font-weight: var(--label-font-weight);
+  color: var(--label-color-text);
+  font-size: var(--label-font-size);
+}
+
+.labelDisabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

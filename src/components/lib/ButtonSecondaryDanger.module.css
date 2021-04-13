@@ -1,0 +1,24 @@
+.buttonSecondaryDanger {
+  background-color: var(--color-neutral-000);
+  border: 1px solid var(--color-neutral-200);
+  color: var(--color-danger-600);
+  text-transform: var(--button-secondary-danger-text-transform);
+}
+
+.buttonSecondaryDanger:focus {
+  box-shadow: var(--color-neutral-100) 0 0 0 4px;
+}
+
+.buttonSecondaryDanger:not(:disabled):active {
+  opacity: 0.7;
+}
+
+@media (hover: hover) {
+  .buttonSecondaryDanger:not(:disabled):hover {
+    opacity: 0.8;
+  }
+
+  .buttonSecondaryDanger:not(:disabled):active {
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,150 @@
+.root {
+  display: grid;
+  padding: var(--sp6) 0;
+}
+
+.emptyContainer {
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  gap: var(--sp6);
+}
+
+.contentContainer {
+  padding: 0 var(--sp5);
+}
+
+.heading {
+  font-size: var(--fs6);
+  font-weight: 700;
+  color: var(--text-color-e);
+  margin: 0 0 var(--sp5) 0;
+}
+
+.subHeading {
+  font-weight: 700;
+  margin: 0 0 var(--sp4) 0;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: 20px auto minmax(100px, 300px) auto;
+  align-items: center;
+  gap: var(--sp6);
+  padding: var(--sp3) var(--sp5);
+  border-block-end: 1px solid var(--list-border-color);
+}
+
+.listItem:first-of-type {
+  border-block-start: 1px solid var(--list-border-color);
+}
+
+.listItem > *:nth-child(4),
+.listItem > *:nth-child(5) {
+  display: none;
+}
+
+.listItemImage {
+  display: block;
+  object-fit: cover;
+  border-radius: var(--image-album-border-radius);
+}
+
+.listItemTextEmphasis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-color-e);
+}
+
+.listItemText,
+.listItemLink {
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.listItemCurrentText {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.listItemTrackNumber {
+  display: grid;
+  /* TODO: use start or end if I can fix alignment on hover */
+  justify-content: center;
+  align-items: end;
+}
+
+.listItem .listItemTrackNumber button {
+  box-shadow: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  width: initial;
+  height: initial;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+.listItem .listItemTrackNumber button svg {
+  font-size: var(--fs5);
+}
+
+.listItem .listItemTrackNumber button > *:nth-child(1) {
+  display: initial;
+}
+
+.listItem .listItemTrackNumber button > *:nth-child(2) {
+  display: none;
+}
+
+.listItemDuration {
+  justify-self: end;
+}
+
+.listItemMenuButtonContainer svg {
+  font-size: var(--fs5);
+}
+
+@media (hover: hover) {
+  .listItem:hover {
+    background-color: var(--surface-background-color);
+  }
+
+  .listItemLink:not(:hover) {
+    text-decoration: none;
+  }
+
+  .listItemLink:hover,
+  .listItemLink:active {
+    text-decoration: underline;
+  }
+
+  .listItem .listItemTrackNumber button:hover {
+    background-color: inherit;
+  }
+
+  .listItem:hover .listItemTrackNumber button > *:nth-child(1) {
+    display: none;
+  }
+
+  .listItem:hover .listItemTrackNumber button > *:nth-child(2) {
+    display: initial;
+  }
+}
+
+@media (min-width: 768px) {
+  .listItem {
+    grid-template-columns: 20px auto minmax(100px, 300px) minmax(100px, 100%) 50px auto;
+  }
+
+  .listItem > *:nth-child(4),
+  .listItem > *:nth-child(5) {
+    display: initial;
+  }
+}

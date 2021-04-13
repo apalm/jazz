@@ -1,0 +1,26 @@
+.buttonPrimary {
+  background: var(--color-primary);
+  color: white;
+  font-weight: 700;
+  border: 1px solid var(--color-primary);
+  text-transform: var(--button-primary-text-transform);
+  transition: all 0.2s ease-in;
+}
+
+.buttonPrimary:focus {
+  box-shadow: var(--form-control-focused-box-shadow);
+}
+
+.buttonPrimary:not(:disabled):active {
+  filter: brightness(1.1) saturate(1.1);
+}
+
+@media (hover: hover) {
+  .buttonPrimary:not(:disabled):hover {
+    filter: brightness(1.1) saturate(1.1);
+  }
+
+  .buttonPrimary:not(:disabled):active {
+    filter: brightness(1.1) saturate(1.1);
+  }
+}
