@@ -40,17 +40,13 @@ export class ConnectorDropbox implements IConnector {
       include_media_info: true,
     });
     let out = this.processFileListResult(response);
-    // TODO
-    const limit = 500;
-    while (response.result.has_more && out.length <= limit) {
+    while (response.result.has_more) {
       response = await this.dropbox.filesListFolderContinue({
         cursor: response.result.cursor,
       });
       out = out.concat(this.processFileListResult(response));
     }
-    // TODO
-    // return out;
-    return out.slice(0, limit);
+    return out;
   }
 
   private processFileListResult(
