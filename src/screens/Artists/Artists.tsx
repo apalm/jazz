@@ -108,7 +108,7 @@ function Content() {
                   isItemCurrent={isArtistCurrent}
                   onClick={handleClick}
                 />
-                <div>{x.name}</div>
+                <div className={styles.itemText}>{x.name}</div>
               </Link>
             </li>
           );

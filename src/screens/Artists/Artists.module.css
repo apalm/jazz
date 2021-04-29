@@ -51,6 +51,13 @@
   display: block;
 }
 
+.itemText {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .emptyContainer {
   margin: 0 auto;
 }
