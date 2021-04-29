@@ -4,6 +4,8 @@ A music player for Dropbox.
 
 https://jazz-f826f4.netlify.app/
 
+![demo](demo.gif)
+
 ## Tech
 
 - TypeScript
